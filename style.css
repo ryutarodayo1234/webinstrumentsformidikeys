@@ -1,0 +1,4 @@
+@media (max-width: 800px), (pointer: coarse) {
+  body {
+    display: none !important;
+  }
