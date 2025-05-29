@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>Web Instruments for MIDI Keys</title>
+  </head>
+<body>
+  <header>
+    <h1 id="instrument-title">Web Instruments</h1>
+    <div id="instrument-selector" class="instrument-selector">
+        <button id="load-piano">Piano</button>
+        <button id="load-drums">Drums</button>
+    </div>
+    <p id="midi-status">MIDIデバイスを接続してください...</p>
+  </header>
+
+  <div id="app-specific-ui-container"></div>
+
+  <div id="loading-spinner" style="display:none;">
+    <div class="spinner"></div>
+  </div>
+
+  <div id="instrument" class="instrument">
+    <iframe id="instrument-iframe" width="100%" height="600px" style="border:none;" src="about:blank" allow="midi"></iframe>
+  </div>
+
+  <script src="main.js"></script>
+  <div id="instrument-script-placeholder"></div>
+
+  <footer>
+      <p>Select an instrument and play with your MIDI keyboard!</p>
+  </footer>
+</body>
+</html>
